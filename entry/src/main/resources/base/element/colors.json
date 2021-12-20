@@ -1,0 +1,16 @@
+{
+  "color": [
+    {
+      "name": "colorPrimary",
+      "value": "#008577"
+    },
+    {
+      "name": "colorPrimaryDark",
+      "value": "#00574B"
+    },
+    {
+      "name": "colorAccent",
+      "value": "#D81B60"
+    }
+  ]
+}
