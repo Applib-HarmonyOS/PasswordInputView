@@ -5,13 +5,14 @@ A HMOS library of custom password (verification code) input box that supports mu
 Inspired by [yu1tiao/PasswordInputView](https://github.com/yu1tiao/PasswordInputView)
 
 ## Features
-1) This library can display plaintext or ciphertext, ciphertext supports displaying dots, asterisks, or any characters
-2) The user can set the color of the border, border color after the user input a value and password.
-3) The user can set the password style as asterisk, plaintext and circle.
-4) The user can set the border style line and box.
-5) The user can set the maximum length of the password.
-6) You can set the interval and rounded corners between the password boxes.
-7) You can configure the radius for the password boxes and they will change accordingly.
+1) This library can display plaintext or ciphertext, ciphertext supports displaying dots, asterisks, or any characters.
+2) The user can set the color of the border of the input box and password.
+3) The color of the input box changes after providing input.
+4) The user can set the password style as asterisk, plaintext and circle.
+5) The user can set the border style line and box.
+6) The user can set the maximum length of the password.
+7) You can set the interval and rounded corners between the password boxes.
+8) You can configure the radius for the input boxes.
 
 <img src="screenshots/passwordinputview.gif" width="500">
 
@@ -26,7 +27,7 @@ dependencies {
 }
 ```
 
-2. For using sqlite2xl in separate application using har file, add the har file in the entry/libs folder and add the dependencies in entry/build.gradle file.
+2. For using passwordinputview in separate application using har file, add the har file in the entry/libs folder and add the dependencies in entry/build.gradle file.
 ```groovy
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.har'])
