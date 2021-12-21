@@ -14,7 +14,7 @@ Inspired by [yu1tiao/PasswordInputView](https://github.com/yu1tiao/PasswordInput
 7) You can set the interval and rounded corners between the password boxes.
 8) You can configure the radius for the input boxes.
 
-<img src="screenshots/passwordinputview.gif" width="500">
+<img src="screenshots/passwordinputview.gif" width="400">
 
 ## Dependency
 1. For using passwordinputview module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/support.har.
@@ -43,7 +43,6 @@ dependencies {
          ohos:width="match_parent"
          ohos:height="50vp"
          ohos:top_margin="10vp"
-         ohos:background_element="@null"
          ohos:text_input_type="pattern_number"
          ohos:padding="1vp"
          ohos:text="12"
@@ -60,6 +59,17 @@ dependencies {
          app:pwv_maxLength="4"
          app:pwv_spacing="12vp" />
 ```
+Attribute | Description
+--- | ---
+`maxLength` | Maximum length of the password for the `PasswordInputView`
+`borderColor` | Border color of the password input box for the `PasswordInputView`
+`pwdColor` | Color of the password for the `PasswordInputView`
+`inputBorderColor` | Border color of the password input box after the input for the `PasswordInputView`
+`asterisk` | Display of ciphertext as dots, asterisks, or any characters for the `PasswordInputView`
+`radius` | Radius of the password input box for the `PasswordInputView`
+`spacing` | Spacing between the input box of the password for the `PasswordInputView`
+`borderStyle` | Border style of the input box for the `PasswordInputView`
+`pwdStyle` | Password style for the `PasswordInputView`
 
 #### Set up the listener:
 ```java
