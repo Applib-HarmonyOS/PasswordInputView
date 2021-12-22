@@ -183,6 +183,7 @@ public class PasswordInputView extends TextField implements LayoutRefreshedListe
         int top = getPaddingTop();
         int bottom = getHeight() - getPaddingBottom();
         int start = getPaddingLeft();
+        setMaxLength(maxLength);
         float left;
         for (int i = 0; i < maxLength; i++) {
             left = start + (boxWidth + spacing) * i;
