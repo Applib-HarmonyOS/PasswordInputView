@@ -1,0 +1,27 @@
+{
+  "app": {
+    "bundleName": "com.matthew.passwordinputview",
+    "vendor": "matthew",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.matthew.passwordinput.lib",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "tv",
+      "wearable",
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "passwordinputview",
+      "moduleType": "har"
+    }
+  }
+}
