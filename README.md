@@ -1,3 +1,6 @@
+[![.github/workflows/main.yml](https://github.com/applibgroup/PasswordInputView/actions/workflows/main.yml/badge.svg)](https://github.com/applibgroup/PasswordInputView/actions/workflows/main.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_PasswordInputView&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=applibgroup_PasswordInputView)
+
 # PasswordInputView
 A HMOS library of custom password (verification code) input box that supports multiple styles.
 
@@ -35,6 +38,14 @@ dependencies {
 }
 ```
 
+3. For using passwordinputview from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
+```groovy
+dependencies {
+    implementation 'dev.applibgroup:passwordinputview:1.0.0'
+    testImplementation 'junit:junit:4.13'
+}
+```
+
 ## Usage
 #### Include following code in your layout:
 ```xml
@@ -51,6 +62,7 @@ dependencies {
          app:pwv_haveInputBorderColor="$color:colorAccent"
          app:pwv_pwdColor="$color:colorAccent"
          app:pwv_pwdStyle="plaintext"
+         app:pwv_asterisk="\@"
          app:pwv_radius="10vp"
          app:pwv_borderStyle="line"
          app:pwv_maxLength="4"
